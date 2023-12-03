@@ -2,16 +2,20 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import Navbar from './components/Navbar/Navbar'
 import About from './Pages/About/About'
 import Home from './Pages/Home/Home'
-import Services from './Pages/Services/Services'
-import Contact from './Pages/Contact/Contact'
+import Designs from './Pages/Designs/Designs'
+import Repairs from './Pages/Repairs/Repairs'
+import Restoration from './Pages/Restoration/Restoration'
+import Advertisement from './Pages/Advertisement/Advertisement'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Navbar/>}>
       <Route index element={<Home/>} />
       <Route path='about' element={<About/>}/>
-      <Route path='services' element={<Services/>}/>
-      <Route path='contact' element={<Contact/>}/>
+      <Route path='designs' element={<Designs/>}/>
+      <Route path='repairs' element={<Repairs/>}/>
+      <Route path='restoration' element={<Restoration/>}/>
+      <Route path='advertisement' element={<Advertisement/>}/>
     </Route>
   )
 )
