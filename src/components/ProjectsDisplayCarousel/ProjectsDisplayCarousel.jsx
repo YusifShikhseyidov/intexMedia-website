@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { links } from "./links";
 import classes from "./ProjectsDisplayCarousel.module.css";
+import { Link } from "react-router-dom";
 
 export default function ProjectsDisplayCarousel() {
   const emptyString = "";
@@ -37,15 +38,15 @@ export default function ProjectsDisplayCarousel() {
         {/* Render the selected content in the lower section */}
         <div className={classes.lowerSection}>
           {selectedContent.map((content, index) => (
-            <a href="/" key={index}>
+            <Link to="/" key={index}>
               <div>
                 <img src={content} alt="alternative" />
                 <div>
-                  <a href="/">Project Name</a>
+                  <Link to="/">Project Name</Link>
                   <span>lorem ipsum</span>
                 </div>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

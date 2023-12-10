@@ -6,6 +6,8 @@
   grid-row-gap: 0px;
   place-items: center;
   padding: 3rem 18rem 3rem 22rem;
+  margin-bottom: 2rem;
+  background-color: #f2f2f2;
 }
 
 .homepage header .headerSectionLeftPart,

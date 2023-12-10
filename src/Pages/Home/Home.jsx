@@ -1,4 +1,7 @@
+import DailyNews from "../../components/DailyNews/DailyNews";
 import NewsSection from "../../components/NewsSection/NewsSection";
+import NewsSection2 from "../../components/NewsSection2/NewsSection2";
+import OurValue from "../../components/OurValue/OurValue";
 import ProjectsDisplayCarousel from "../../components/ProjectsDisplayCarousel/ProjectsDisplayCarousel";
 import classes from "./Home.module.css";
 import video0 from "./assets/headerVideo2.mp4";
@@ -36,6 +39,9 @@ export default function Home() {
       <main>
         <NewsSection />
         <ProjectsDisplayCarousel />
+        <NewsSection2/>
+        <OurValue/>
+        <DailyNews/>
       </main>
     </div>
   );

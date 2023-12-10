@@ -1,0 +1,18 @@
+.ourValuesSection{
+  margin-bottom: 5rem;
+  width: 100%;
+  text-align: center;
+  padding: 100px 396px;
+  background-image: url("blurry-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ourValuesSection h1{
+  margin-bottom: 1.5rem;
+}
+
+.ourValuesSection p{
+  max-width: 28rem;
+  margin: 0 auto;
+}

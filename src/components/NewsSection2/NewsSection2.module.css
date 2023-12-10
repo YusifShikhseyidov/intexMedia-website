@@ -1,0 +1,120 @@
+.newsSection2 {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 0px;
+  margin-bottom: 5rem;
+}
+
+.newsSection2 .leftPart{
+  display: flex;
+  column-gap: 30px;
+  justify-content: flex-end;
+}
+
+.newsSection2 .leftPart .newsBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 350px;
+  height: 500px;
+  border: 1px solid #f2f2f2;
+  position: relative;
+}
+
+.newsSection2 .leftPart .newsBox .imgWrapper {
+  width: 100%;
+  height: 240px;
+  border-bottom: 3px solid #edac15;
+}
+
+.newsSection2 .leftPart .newsBox .timeStamp{
+  position: absolute;
+  top: 44.5%;
+  left: 10%;
+  color: #fff;
+  background-color: #edac15;
+  padding: 0.25rem 0.625rem;
+}
+
+.newsSection2 .leftPart .newsBox .imgWrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.newsSection2 .leftPart .newsBox p {
+  width: 100%;
+  font-size: 14px;
+  color: #999;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.newsSection2 .leftPart .newsBox a.linkTitle{
+  font-weight: 500;
+  font-size: 23px;
+  text-decoration: none;
+  color: #000;
+  width: fit-content;
+  height: 30px;
+  margin-left: 2rem;
+}
+
+.newsSection2 .leftPart .newsBox a.linkTitle:hover{
+  border-bottom: 2px solid #000;
+}
+
+/* news section right part styling */
+.newsSection2 .rightPart{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eee;
+  max-width: fit-content;
+  height: fit-content;
+}
+
+.newsSection2 .rightPart a{
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  text-decoration: none;
+  border: 2px solid #999;
+  border-top: 0;
+  border-left: 3px solid #eee;
+  border-right: 0;
+  border-bottom: 1px solid #eee;
+  padding: 20px 37px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.newsSection2 .rightPart a:last-child{
+  border-bottom: none;
+}
+
+.newsSection2 .rightPart a:hover{
+  border-left: 3px solid #edac15;
+  background-color: #999;
+}
+
+.newsSection2 .rightPart a div{
+  line-height: 1.1;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.newsSection2 .rightPart a p{
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.newsSection2 .rightPart a:hover div,
+.newsSection2 .rightPart a:hover p{
+  color: #fff;
+}
+
+.newsSection2 .rightPart a p{
+  color: #999;
+}
