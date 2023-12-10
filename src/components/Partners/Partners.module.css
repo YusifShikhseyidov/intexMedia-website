@@ -1,0 +1,26 @@
+.partnersSection{
+  padding: 70px 394px;
+  margin-bottom: 5rem;
+}
+
+.partnersSection h1{
+  margin-bottom: 3rem;
+}
+
+.partnersSection div{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.partnersSection div img{
+  width: 150px;
+  height: 80px;
+  border: 1px solid #72727229;
+  transition: 0.5s;
+}
+
+.partnersSection div img:hover{
+  border-color: #e8b351c2;
+}
