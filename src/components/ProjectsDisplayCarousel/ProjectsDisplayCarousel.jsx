@@ -33,7 +33,6 @@ export default function ProjectsDisplayCarousel() {
             </button>
           ))}
         </div>
-        {/* <hr style={{backgroundColor: "red"}} /> */}
         <br />
         {/* Render the selected content in the lower section */}
         <div className={classes.lowerSection}>
@@ -42,7 +41,7 @@ export default function ProjectsDisplayCarousel() {
               <div>
                 <img src={content} alt="alternative" />
                 <div>
-                  <Link to="/">Project Name</Link>
+                  <span>Project Name</span>
                   <span>lorem ipsum</span>
                 </div>
               </div>

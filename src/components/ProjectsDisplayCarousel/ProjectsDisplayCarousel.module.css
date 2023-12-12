@@ -64,14 +64,13 @@
   height: auto;
   background-color: #fff;
   text-decoration: none;
-  transition: color 0.3s;
 }
 
 .linksSection .lowerSection a div{
   height: auto;
 }
 
-.linksSection .lowerSection a:hover div > div a{
+.linksSection .lowerSection a:hover div > div span:first-child{
   color: #edac15;
 }
 
@@ -86,14 +85,15 @@
   flex-direction: column;
 }
 
-.linksSection .lowerSection div > div a{
+.linksSection .lowerSection a div > div span:first-child{
   padding: 13px 0 0 10px;
   line-height: 0.5;
   color: #000;
   font-size: 15px;
+  transition: 0.3s;
 }
 
-.linksSection .lowerSection div > div span{
+.linksSection .lowerSection div > div span:last-child{
   padding: 2px 0 5px 10px;
   color: #999;
   font-size: 16px;

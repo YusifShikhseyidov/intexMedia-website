@@ -8,3 +8,9 @@
   font-family: "Playfair Display", serif;
   font-family: "Poppins", sans-serif;
 }
+
+
+::selection{
+  background-color: #0F172A;
+  color: #fff;
+}

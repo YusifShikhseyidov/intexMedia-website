@@ -6,6 +6,7 @@ import Designs from './Pages/Designs/Designs'
 import Repairs from './Pages/Repairs/Repairs'
 import Restoration from './Pages/Restoration/Restoration'
 import Advertisement from './Pages/Advertisement/Advertisement'
+import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,6 +26,7 @@ function App() {
   return (
     <div className='App'>
       <RouterProvider router={router} />
+      <ScrollToTopButton />
     </div>
   )
 }

@@ -5,6 +5,10 @@
   min-height: 95px;
   position: relative;
   background-color: #0f172a;
+  padding: 0 9rem 0 12rem;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 .navigationArea .logoContainer {
