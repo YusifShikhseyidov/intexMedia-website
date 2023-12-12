@@ -1,4 +1,3 @@
-import Slide from "react-reveal/Slide"
 import Footer from "../../components/Footer/Footer";
 import NewsSection from "../../components/NewsSection/NewsSection";
 import NewsSection2 from "../../components/NewsSection2/NewsSection2";
@@ -8,18 +7,19 @@ import ProjectsDisplayCarousel from "../../components/ProjectsDisplayCarousel/Pr
 import classes from "./Home.module.css";
 import video0 from "./assets/headerVideo2.mp4";
 import video1 from "./assets/headerVideo3.mp4";
+import {Fade} from "react-awesome-reveal"
 
 export default function Home() {
   return (
     <div className={classes.homepage}>
       <header>
         <div className={classes.headerSectionLeftPart}>
-          <Slide left big>
+          <Fade direction="left" triggerOnce={true}>
             <video width={592} height={333} controls>
               <source src={video0} type="video/mp4" />
             </video>
-          </Slide>
-          <Slide left delay={1000} big>
+          </Fade>
+          <Fade direction="left" delay={1000} triggerOnce={true}>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
               consequuntur odit nesciunt minima maiores dolor laborum, animi
@@ -27,15 +27,15 @@ export default function Home() {
               facere dolorum ratione sequi laboriosam! Totam iusto, ipsum cum
               excepturi iure exercitationem impedit voluptatum hic
             </p>
-          </Slide>
+          </Fade>
         </div>
         <div className={classes.headerSectionRightPart}>
-          <Slide right big>
+          <Fade direction="right" triggerOnce={true}>
             <video width={592} height={333} controls>
               <source src={video1} type="video/mp4" />
             </video>
-          </Slide>
-          <Slide right big delay={1000}>
+          </Fade>
+          <Fade direction="right" delay={1000} triggerOnce={true}>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
               consequuntur odit nesciunt minima maiores dolor laborum, animi
@@ -43,7 +43,7 @@ export default function Home() {
               facere dolorum ratione sequi laboriosam! Totam iusto, ipsum cum
               excepturi iure exercitationem impedit voluptatum hic
             </p>
-          </Slide>
+          </Fade>
         </div>
       </header>
       <main>
