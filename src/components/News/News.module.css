@@ -1,0 +1,37 @@
+.sectionNews{
+  height: 110px;
+  display: flex;
+  background-image: url("./newsSectionBg.jpg");
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 5rem;
+}
+
+.sectionNews a{
+  width: 65%;
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 380px;
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.sectionNews a::after{
+  content: '>';
+  position: absolute;
+  top: 34.3%;
+  left: 10.2%;
+  font-size: 25px;
+  font-weight: 800;
+  transition: 0.3s;
+}
+
+.sectionNews a:hover::after{
+  transform: translateX(10px);
+}
+
+.sectionNews a div{
+  width: 100%;
+}

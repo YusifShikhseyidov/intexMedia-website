@@ -1,4 +1,5 @@
 import Footer from "../../components/Footer/Footer";
+import News from "../../components/News/News";
 import NewsSection from "../../components/NewsSection/NewsSection";
 import NewsSection2 from "../../components/NewsSection2/NewsSection2";
 import OurValue from "../../components/OurValue/OurValue";
@@ -48,8 +49,10 @@ export default function Home() {
       </header>
       <main>
         <NewsSection />
+        <News/>
         <ProjectsDisplayCarousel />
         <NewsSection2 />
+        <News/>
         <OurValue />
         <Partners />
         <Footer />
