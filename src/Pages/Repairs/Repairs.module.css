@@ -1,0 +1,91 @@
+.sectionRepairs .header_title {
+  text-align: center;
+  margin: 4rem 0 0 0;
+}
+
+.sectionRepairs h1 {
+  position: relative;
+}
+
+.sectionRepairs h1::after {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 1px;
+  background-color: #0f172a;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sectionRepairs .repairsSectionMain{
+  background-color: #f2f2f2;
+  overflow: hidden;
+}
+
+.sectionRepairs .repairsSectionMain a{
+  width: fit-content;
+  padding: 0.7rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0f172a;
+  border-radius: 4px;
+  transition: all 0.5s;
+  border: 1px solid #fff;
+}
+
+.sectionRepairs .repairsSectionMain a:hover{
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.sectionRepairs .repairsSectionMain .designPhotoAndInfoContainer{
+  display: flex;
+  height: 315px;
+}
+
+.sectionRepairs .repairsSectionMain .designPhotoAndInfoContainer .design_info{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+  padding: 0 4.235rem 0;
+}
+
+.sectionRepairs .repairsSectionMain .designPhotoAndInfoContainer .design_info h3{
+  margin-top: 3rem;
+}
+
+.sectionRepairs .repairsSectionMain .designPhotoAndInfoContainer .design_info p{
+  width: 51rem;
+  font-size: 14px;
+}
+
+.sectionRepairs .repairsSectionMain .designPhotoAndInfoContainer .imageWrapper{
+  flex: 2;
+}
+
+.sectionRepairs .repairsSectionMain .designPhotoAndInfoContainer .imageWrapper img{
+  width: 100%;
+  height: 100%;
+}
+
+.sectionRepairs .repairsSectionMain .gridDesignElements{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin-top: 5rem;
+}
+
+.sectionRepairs .repairsSectionMain .gridDesignElements .designPhotoAndInfoContainerGrid{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sectionRepairs .repairsSectionMain .gridDesignElements .designPhotoAndInfoContainerGrid h3{
+  margin: 3px 0;
+}

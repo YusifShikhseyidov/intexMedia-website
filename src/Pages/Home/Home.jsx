@@ -20,7 +20,7 @@ export default function Home() {
               <source src={video0} type="video/mp4" />
             </video>
           </Fade>
-          <Fade direction="left" delay={1000} triggerOnce={true}>
+          <Fade direction="left" delay={500} triggerOnce={true}>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
               consequuntur odit nesciunt minima maiores dolor laborum, animi
@@ -36,7 +36,7 @@ export default function Home() {
               <source src={video1} type="video/mp4" />
             </video>
           </Fade>
-          <Fade direction="right" delay={1000} triggerOnce={true}>
+          <Fade direction="right" delay={500} triggerOnce={true}>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
               consequuntur odit nesciunt minima maiores dolor laborum, animi

@@ -1,0 +1,62 @@
+.sectionAdvertisement{
+  width: 1903px;
+}
+
+.sectionAdvertisement .sectionAdvertisement_header h1{
+  margin-top: 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.sectionAdvertisement .sectionAdvertisement_header h1::after{
+  content: "";
+  position: absolute;
+  width: 12rem;
+  height: 1px;
+  background-color: #0f172a;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.gridDesignAdvertisementElements{
+  width: 1903px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin-top: 5rem;
+  padding: 0 10px 0;
+}
+
+.gridDesignAdvertisementElements .designPhotoAndInfoContainerGrid{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gridDesignAdvertisementElements .designPhotoAndInfoContainerGrid img{
+  width: 620px;
+}
+
+.gridDesignAdvertisementElements .designPhotoAndInfoContainerGrid h3{
+  margin: 3px 0;
+}
+
+.gridDesignAdvertisementElements a{
+  width: fit-content;
+  padding: 0.7rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0f172a;
+  border-radius: 4px;
+  transition: all 0.5s;
+  border: 1px solid #fff;
+}
+
+.gridDesignAdvertisementElements a:hover{
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
