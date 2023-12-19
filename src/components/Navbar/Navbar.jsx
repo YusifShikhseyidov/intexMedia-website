@@ -1,18 +1,15 @@
 import { NavLink, Outlet } from "react-router-dom";
 import navLogo from "./assets/intexmediaLogo.jpg";
 import { navlinks } from "./navLinks";
-import classes from "./Navbar.module.css";
+import "./Navbar.css";
 import { useEffect, useState } from "react";
 
 function Navbar() {
   const [show, setShow] = useState(false);
 
-  // just for giving empty css class
-  const emptyString = "";
-
   useEffect(()=>{
     const handleOutsideClick = (e) => {
-      if(show && !e.target.closest('.donna')){
+      if(show && !e.target.closest('.keeper')){
         setShow(!show)
       }
     }
@@ -26,26 +23,29 @@ function Navbar() {
 
   return (
     <>
-      <nav className={classes.navigationArea}>
-        <NavLink to="/" className={classes.logoContainer}>
+      <nav className='navigationArea'>
+        <NavLink to="/" className='logoContainer'>
           <img src={navLogo} alt="logo" />
         </NavLink>
-        <div className="donna">
-          <div className={`${classes.hamburgerMenu} ${show ? classes.activated : emptyString}`} onClick={() => setShow(!show)}>
-            <span className={show ? classes.lineTopSpin : emptyString}></span>
-            <span className={show ? classes.lineMiddleSpin : emptyString}></span>
-            <span className={show ? classes.lineBottomSpin : emptyString}></span>
+        <div className='keeper'>
+          <div className={`hamburgerMenu ${show ? 'activated' : ''}`} onClick={() => setShow(!show)}>
+            <span className={show ? 'lineTopSpin' : ''}></span>
+            <span className={show ? 'lineMiddleSpin' : ''}></span>
+            <span className={show ? 'lineBottomSpin' : ''}></span>
           </div>
 
-          <ul className={`${classes.navigationLinksContainer} ${show ? classes.open : emptyString}`}>
+          <ul className={`navigationLinksContainer ${show ? 'open' : ''}`}>
             {navlinks.map((navlink, index) => (
               <li key={index} onClick={()=> setShow(!show)}>
-                <NavLink to={navlink.path}>{navlink.name}</NavLink>
+                <NavLink to={navlink.path} 
+                  className={({isActive})=> isActive ? 'active' : ''}
+                >{navlink.name}</NavLink>
               </li>
             ))}
           </ul>
-
         </div>
+
+        
       </nav>
 
       <main>

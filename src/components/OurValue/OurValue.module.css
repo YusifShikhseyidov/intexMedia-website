@@ -16,3 +16,17 @@
   max-width: 28rem;
   margin: 0 auto;
 }
+
+@media (max-width: 480px){
+  .ourValuesSection{
+    text-align: center;
+    padding: 60px;
+  }
+}
+
+@media (max-width: 768px){
+  .ourValuesSection{
+    text-align: center;
+    padding: 5rem 0;
+  }
+}

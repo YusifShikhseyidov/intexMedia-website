@@ -1,4 +1,4 @@
-.homepage header {
+.homepage .homepage_header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
@@ -10,17 +10,85 @@
   background-color: #f2f2f2;
 }
 
-.homepage header .headerSectionLeftPart,
-.homepage header .headerSectionRightPart{
+.homepage .homepage_header .headerSectionLeftPart,
+.homepage .homepage_header .headerSectionRightPart {
   width: 37rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-.homepage header .headerSectionLeftPart p,
-.homepage header .headerSectionRightPart p{
+.homepage .homepage_header .headerSectionLeftPart video,
+.homepage .homepage_header .headerSectionRightPart video {
+  width: 592px;
+  height: 333px;
+}
+
+.homepage .homepage_header .headerSectionLeftPart p,
+.homepage .homepage_header .headerSectionRightPart p {
   margin: 20px 0;
   padding: 0 20px;
 }
 
+@media (max-width: 480px) {
+
+  /* .homepage{
+    overflow: hidden;
+  } */
+
+  .homepage .homepage_header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 3rem 0;
+  }
+
+  .homepage .homepage_header .headerSectionLeftPart,
+  .homepage .homepage_header .headerSectionRightPart {
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .homepage .homepage_header .headerSectionLeftPart video,
+  .homepage .homepage_header .headerSectionRightPart video {
+    width: 100%;
+    height: 100%;
+  }
+
+  .homepage .homepage_header .headerSectionLeftPart p,
+  .homepage .homepage_header .headerSectionRightPart p {
+    margin: 20px 0;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px){
+  .homepage .homepage_header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 3rem 0;
+    background-color: #f2f2f2;
+  }
+
+  .homepage .homepage_header .headerSectionLeftPart,
+  .homepage .homepage_header .headerSectionRightPart {
+    width: 28rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .homepage .homepage_header .headerSectionLeftPart p,
+  .homepage .homepage_header .headerSectionRightPart p {
+    width: 39rem;
+    margin: 16px 0 65px;
+    /* padding: 0 20px; */
+  }
+}

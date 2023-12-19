@@ -35,3 +35,47 @@
 .sectionNews a div{
   width: 100%;
 }
+
+@media (max-width: 425px){
+  .sectionNews{
+    width: 100%;
+    justify-content: center;
+    background-position: right;
+  }
+
+  .sectionNews a{
+    width: 100%;
+    margin: 0;
+    padding-left: 3rem;
+  }
+
+  .sectionNews a::after{
+    position: absolute;
+    top: 35.4%;
+    left: 43%;
+  }
+}
+
+@media (max-width: 375px){
+  .sectionNews a::after{
+    position: absolute;
+    top: 35.7%;
+    left: 49%;
+  }
+}
+
+@media (max-width: 768px){
+  .sectionNews{
+    width: 100%;
+    justify-content: center;
+    background-position: right;
+  }
+
+  .sectionNews a{
+    margin: 0;
+  }
+
+  .sectionNews a::after{
+    left: 26.2%;
+  }
+}

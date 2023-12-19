@@ -13,10 +13,10 @@ import {Fade} from "react-awesome-reveal"
 export default function Home() {
   return (
     <div className={classes.homepage}>
-      <header>
+      <header className={classes.homepage_header}>
         <div className={classes.headerSectionLeftPart}>
           <Fade direction="left" triggerOnce={true}>
-            <video width={592} height={333} controls>
+            <video controls>
               <source src={video0} type="video/mp4" />
             </video>
           </Fade>
@@ -32,7 +32,7 @@ export default function Home() {
         </div>
         <div className={classes.headerSectionRightPart}>
           <Fade direction="right" triggerOnce={true}>
-            <video width={592} height={333} controls>
+            <video controls>
               <source src={video1} type="video/mp4" />
             </video>
           </Fade>
