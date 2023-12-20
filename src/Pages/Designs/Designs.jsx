@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { links } from "../../components/ProjectsDisplayCarousel/links";
 import classes from "./Designs.module.css";
-import {Fade} from "react-awesome-reveal"
+import {Fade} from "react-awesome-reveal";
+import Footer from "../../components/Footer/Footer";
 
 export default function Designs() {
   const emptyString = "";
@@ -56,6 +57,8 @@ export default function Designs() {
           </Fade>
         ))}
       </div>
+      <hr />
+      <Footer/>
     </section>
   );
 }

@@ -1,14 +1,16 @@
 import { Link } from "react-router-dom";
 import classes from "./Advertisement.module.css";
 import { Fade } from "react-awesome-reveal";
+import Footer from "../../components/Footer/Footer"
 
 export default function Advertisement() {
+
   return (
     <div className={classes.sectionAdvertisement}>
-      <div className={classes.sectionAdvertisement_header}>
+      <header className={classes.sectionAdvertisement_header}>
         <h1>Advertisement</h1>
-      </div>
-      <section className={classes.gridDesignAdvertisementElements}>
+      </header>
+      <main className={classes.gridDesignAdvertisementElements}>
         <Fade direction="up" triggerOnce={true}>
           <div className={classes.designPhotoAndInfoContainerGrid}>
             <img
@@ -113,7 +115,8 @@ export default function Advertisement() {
             <Link>Explore Service</Link>
           </div>
         </Fade>
-      </section>
+      </main>
+      <Footer/>
     </div>
   );
 }

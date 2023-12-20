@@ -70,7 +70,7 @@
 
 /* ****************styling according to screen sizes************************ */
 
-@media (max-width: 480px){
+@media (max-width: 480px) and (min-width: 320px){
   .navigationArea{
     display: flex;
     justify-content: flex-start;
@@ -150,7 +150,7 @@
   
 }
 
-@media (max-width: 768px){
+@media (max-width: 1024px) and (min-width: 481px){
   .navigationArea{
     display: flex;
     justify-content: flex-start;
@@ -226,6 +226,19 @@
   
   .navigationArea .hamburgerMenu span.lineBottomSpin{
     opacity: 0;
+  }
+  
+}
+
+@media (min-width: 1025px) and (max-width: 1440px){
+  .navigationArea .hamburgerMenu {
+    display: none;
+  }
+
+  .navigationArea {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem 0 7rem;
   }
   
 }
