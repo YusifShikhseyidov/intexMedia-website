@@ -1,5 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
-import navLogo from "./assets/intexmediaLogoTransparent.png";
+import navLogo from "./assets/intexmediaLogo.jpg";
 import { navlinks } from "./navLinks";
 import "./Navbar.css";
 import { useEffect, useState } from "react";
