@@ -30,3 +30,10 @@
     padding: 5rem 0;
   }
 }
+
+@media (max-width: 1024px) and (min-width: 769px){
+  .ourValuesSection{
+    text-align: center;
+    padding: 5rem 0;
+  }
+}
