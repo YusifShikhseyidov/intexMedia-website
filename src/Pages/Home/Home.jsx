@@ -49,8 +49,10 @@ export default function Home() {
       </header>
       <main>
         <NewsSection />
+        <NewsSection />
         <News/>
         <ProjectsDisplayCarousel />
+        <NewsSection2 />
         <NewsSection2 />
         <News/>
         <OurValue />
