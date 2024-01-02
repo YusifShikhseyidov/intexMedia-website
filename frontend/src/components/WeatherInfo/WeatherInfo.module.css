@@ -1,0 +1,74 @@
+.weather_info_box{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 35rem;
+  height: fit-content;
+  margin-right: auto;
+}
+
+.weather_info_box p{
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.weather_info_box > span{
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.weather_logo_box{
+  width: 4rem;
+  height: 4rem;
+}
+
+.weather_logo_box img{
+  width: 100%;
+  height: 100%;
+}
+
+.degree_and_weatherIcon{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+}
+
+.degree_and_weatherIcon span{
+  font-size: 27px;
+  font-weight: 500;
+}
+
+.extra_info_box{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.extra_info_box div{
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.extra_info_box div span{
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+}
+
+.extra_info_box div span:first-child{
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.extra_info_box div span:last-child{
+  padding: 1rem;
+}
+
+.extra_info_box div span svg{
+  font-size: 1.5rem;
+}

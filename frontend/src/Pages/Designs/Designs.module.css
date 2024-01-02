@@ -1,0 +1,187 @@
+.sectionDesigns {
+  min-height: 100vh;
+  background-color: #f2f2f2;
+  width: 100%;
+}
+
+.sectionDesigns_title {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  width: 50%;
+  padding: 40px;
+  background-image: url("./designsPageBg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  border: 1px solid #0000000e;
+  border-top: none;
+  margin: 0 auto;
+}
+
+.sectionDesigns_title h1 {
+  font-family: "Dancing Script", cursive;
+}
+
+.sectionDesigns_title span {
+  font-family: "Dancing Script", cursive;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.upperLinksSection {
+  width: 50vw;
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 10px;
+  margin: 0 auto 2rem;
+  border-bottom: 2px solid #999;
+}
+
+.upperLinksSection .upperSectionBtns {
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  color: #999;
+}
+
+.upperLinksSection .upperSectionBtns.selected {
+  color: #fff;
+  background-color: #0f172a;
+}
+
+.upperLinksSection button:hover {
+  cursor: pointer;
+}
+
+/* lower section styles */
+
+.lowerDesignsSection {
+  display: grid;
+  grid-template-columns: repeat(3, 0.5fr);
+  /* grid-template-rows: repeat(4, 1fr); */
+  grid-auto-rows: auto;
+  justify-items: center;
+  grid-column-gap: 0px;
+  grid-row-gap: 50px;
+  width: 52%;
+  margin: 0 auto;
+}
+
+.lowerDesignsSection a {
+  display: flex;
+  width: 250px;
+  height: auto;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.lowerDesignsSection a div {
+  height: auto;
+}
+
+.lowerDesignsSection a:hover div > div span:first-child {
+  color: #edac15;
+}
+
+.lowerDesignsSection div img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 10/8;
+}
+
+.lowerDesignsSection div > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.lowerDesignsSection a div > div span:first-child {
+  padding: 13px 0 0 10px;
+  line-height: 0.5;
+  color: #000;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.lowerDesignsSection div > div span:last-child {
+  padding: 2px 0 5px 10px;
+  color: #999;
+  font-size: 14px;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #0f172a;
+  margin: 3em 0 0 0;
+  padding: 0;
+}
+
+@media (max-width: 640px) and (min-width: 320px){
+  .sectionDesigns_title {
+    width: 100%;
+    padding: 40px;
+    background-position: right;
+  }
+
+  .upperLinksSection{
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 20px 10px 10px;
+  }
+
+  .lowerDesignsSection{
+    width: fit-content;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 641px){
+  .sectionDesigns_title {
+    width: 100%;
+    padding: 40px;
+    background-position: right;
+  }
+
+  .upperLinksSection{
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 20px 10px 10px;
+  }
+
+  .lowerDesignsSection{
+    width: fit-content;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1550px) and (min-width: 1025px){
+  .sectionDesigns{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    justify-items: center;
+  }
+
+  .sectionDesigns_title {
+    width: 70%;
+    background-position: right;
+  }
+
+  .upperLinksSection{
+    padding: 20px 0;
+    width: 71vw;
+  }
+
+  .lowerDesignsSection {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    width: 75%;
+  }
+}
