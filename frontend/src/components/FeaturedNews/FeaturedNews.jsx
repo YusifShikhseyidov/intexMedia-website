@@ -29,7 +29,7 @@ export default function FeaturedNews() {
     fetchData()
   },[])
 
-  console.log(news)
+  // console.log(news)
 
   return (
     <section className={classes.featuredNews}>

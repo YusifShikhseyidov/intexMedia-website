@@ -29,7 +29,7 @@ export default function FeaturedNewsAside() {
     fetchData()
   },[])
 
-  console.log(news)
+  // console.log(news)
 
   return (
     <aside className={classes.featuredVideoNews}>

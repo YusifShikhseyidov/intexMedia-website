@@ -36,7 +36,7 @@ export default function Repairs() {
     fetchData();
   }, []);
 
-  console.log(buildingRepairDesigns);
+  // console.log(buildingRepairDesigns);
 
   return (
     <>

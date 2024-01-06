@@ -32,7 +32,7 @@ export default function RepairspageGridSection() {
     fetchData();
   }, []);
 
-  console.log(buildingRepairDesignsGridSection);
+  // console.log(buildingRepairDesignsGridSection);
 
   return (
     <div className={classes.gridDesignElements}>
