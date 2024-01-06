@@ -18,6 +18,7 @@ import misty from "./assets/misty.svg"
 import snow from "./assets/snow.png"
 
 export default function WeatherInfo() {
+  // create states for the weather elements
   const [city, setCity] = useState('')
   const [weatherIcon, setWeatherIcon] = useState('')
   const [temperature, setTemperature] = useState('')
@@ -65,13 +66,13 @@ export default function WeatherInfo() {
           }
         </div>
         {'-'}
-        <span>{Number(temperature.temp).toFixed()}°C</span>
+        <span>{Math.round(Number(temperature.temp))}°C</span>
       </div>
       <span>{weatherDescription.description}</span>
       <div className={classes.extra_info_box}>
-        <div><span>Min Temp</span><span><FaTemperatureEmpty />{Number(temperature.temp_min).toFixed()}°C</span></div>
-        <div><span>Max Temp</span><span><FaTemperatureFull />{Number(temperature.temp_max).toFixed()}°C</span></div>
-        <div><span>Wind</span><span><SiWindicss /> &nbsp;&nbsp;{Number(wind)}km/h</span></div>
+        <div><span>Min Temp</span><span><FaTemperatureEmpty />{Math.round(Number(temperature.temp_min))}°C</span></div>
+        <div><span>Max Temp</span><span><FaTemperatureFull />{Math.round(Number(temperature.temp_max))}°C</span></div>
+        <div><span>Wind</span><span><SiWindicss /> &nbsp;{Number(wind).toFixed()}km/h</span></div>
         <div><span>Humidity</span><span><WiHumidity />{Number(temperature.humidity).toFixed()}%</span></div>
       </div>      
       

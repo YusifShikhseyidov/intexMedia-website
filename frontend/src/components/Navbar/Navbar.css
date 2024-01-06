@@ -31,14 +31,30 @@
   color: #ffffff;
   padding: 10px;
   border-radius: 5px;
+  z-index: 0;
+  position: relative;
+}
+
+
+.navigationArea .navigationLinksContainer a::before{
+  background: #172554;
+  content: "";
+  inset: 0;
+  border-radius: 5px;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.2s ease-in-out;
+  z-index: -1;
 }
 
 .navigationArea .navigationLinksContainer a.active{
   background-color: #172554;
 }
 
-.navigationArea .navigationLinksContainer a:hover {
-  background-color: #172554;
+.navigationArea .navigationLinksContainer a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .navigationArea .hamburgerMenu {

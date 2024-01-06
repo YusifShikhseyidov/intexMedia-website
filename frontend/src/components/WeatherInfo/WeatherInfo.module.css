@@ -55,7 +55,6 @@
 .extra_info_box div span{
   font-size: 15px;
   font-weight: 500;
-  text-transform: capitalize;
   display: flex;
   align-items: center;
 }

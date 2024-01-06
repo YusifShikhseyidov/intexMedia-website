@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "repairs_page_design_cards",
+  "info": {
+    "singularName": "repairs-page-design-card",
+    "pluralName": "repairs-page-design-cards",
+    "displayName": "repairsPageDesignCard",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "repairs_page_design_card_title": {
+      "type": "string",
+      "required": true
+    },
+    "repairs_page_design_card_description": {
+      "type": "text",
+      "required": true
+    },
+    "coverphoto": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

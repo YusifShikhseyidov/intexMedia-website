@@ -1,0 +1,91 @@
+/* loader case animation */
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 20px;
+  background: radial-gradient(circle closest-side, #000 94%, #0000)
+    right/calc(200% - 1em) 100%;
+  animation: l24 1s infinite alternate linear;
+}
+.loader::before {
+  content: "Loading...";
+  line-height: 1em;
+  color: #0000;
+  background: inherit;
+  background-image: radial-gradient(circle closest-side, #fff 94%, #000);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@keyframes l24 {
+  100% {
+    background-position: left;
+  }
+}
+
+/* section styling */
+.featuredVideoNews {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.featuredVideoNews .featuredVideoNews_aside_title{
+  color: #000;
+  text-decoration: underline;
+  text-decoration-color: rebeccapurple;
+  text-decoration-thickness: 5px;
+  height: fit-content;
+}
+
+/* aside section news box styling */
+.featuredVideoNews a,
+.featuredVideoNews .aside_news_box{
+  width: 25rem;
+  height: fit-content;
+}
+
+.featuredVideoNews .aside_news_box .aside_news_box_videoHeader_box{
+  position: relative;
+  overflow: hidden;
+}
+
+.featuredVideoNews .aside_news_box .aside_news_box_videoNews_info_box > div{
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.featuredVideoNews .aside_news_box .aside_news_box_videoNews_info_box > div mark{
+  text-transform: capitalize;
+  background-color: #fff;
+  color: rebeccapurple;
+}
+
+.featuredVideoNews .aside_news_box .aside_news_box_videoNews_info_box h2{
+  text-transform: capitalize;
+}
+
+.featuredVideoNews .aside_news_box .aside_news_box_videoHeader_box img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+
+.featuredVideoNews .aside_news_box:hover .aside_news_box_videoHeader_box > img{
+  transform: scale(1.05);
+}
+
+.featuredVideoNews .aside_news_box .play_btn{
+  color: blueviolet;
+  font-size: 5rem;
+  position: absolute;
+  bottom: 6rem;
+  left: 10rem;
+}

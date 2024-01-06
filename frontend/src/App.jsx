@@ -7,6 +7,8 @@ import Repairs from './Pages/Repairs/Repairs'
 import Restoration from './Pages/Restoration/Restoration'
 import Advertisement from './Pages/Advertisement/Advertisement'
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
+import NewsContent from './Pages/NewsContent/NewsContent'
+import RepairsInfo from './Pages/RepairsInfo/RepairsInfo'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -14,9 +16,13 @@ const router = createBrowserRouter(
       <Route index element={<Home/>} />
       <Route path='about' element={<About/>}/>
       <Route path='designs' element={<Designs/>}/>
-      <Route path='repairs' element={<Repairs/>}/>
+      <Route path='repairs' element={<Repairs/>}>
+        <Route path=':id' element={<RepairsInfo/>}/>
+
+      </Route>
       <Route path='restoration' element={<Restoration/>}/>
       <Route path='advertisement' element={<Advertisement/>}/>
+      <Route path='news/:id' element={<NewsContent/>}/>
     </Route>
   )
 )
